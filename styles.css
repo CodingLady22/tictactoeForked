@@ -1,0 +1,23 @@
+ * {
+     box-sizing: border-box;
+ }
+ #board {
+     padding-top: 3em;
+     text-align: center;   
+ }
+ #floatLeft{
+    float: left;
+    height: 100px;
+    width: 100px;
+    clear: none;   
+}  
+ .row {
+    width: 302px;
+    margin: 0 auto; 
+    cursor: pointer;     
+}
+.top{ border-bottom: 10px ridge rgb(46, 95, 23);}
+.bottom{border-top: 10px rgb(177, 32, 121) ridge;}
+.left{border-right: 10px rgb(72, 148, 28) ridge;}
+.right{border-left: 10px rgb(121, 45, 45) ridge;} 
+
