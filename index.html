@@ -4,27 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <title>Tic Tac Toe Game Board Lab</title>
+    <title>Lab: Tic Tac Toe Game Board</title>
   </head>
-  <body>
+  <body id="top-wrapper">
+    <div class="section-wrapper">
+    <h1 id="title">Tic Tac Toe</h1>
+         <div class="controls">
+      <button id="restart" onclick="removeHandler('restart')">Reset</button>
+    </div>
+    </div>
+  </div>
     <div id="board">
-      <h1>Tic Tac Toe</h1>
       <div class="row">
-        <div class="top left" id="floatLeft"></div>
-        <div class="top middle" id="floatLeft"></div>
-        <div class="top right" id="floatLeft"></div>
+        <div class="top left float" id="0" onclick="display_input('0')"></div>
+        <div class="top middle float" id="1"  onclick="display_input('1')"></div>
+        <div class="top right float" id="2" onclick="display_input('2')"></div>
       </div>
       <div class="row">
-        <div class="center left" id="floatLeft"></div>
-        <div class="center" id="floatLeft"></div>
-        <div class="center right" id="floatLeft"></div>
+        <div class="center left float" id="3" onclick="display_input('3')"></div>
+        <div class="center float" id="4" onclick="display_input('4')"></div>
+        <div class="center right float" id="5" onclick="display_input('5')"></div>
       </div>
       <div class="row">
-        <div class="bottom left" id="floatLeft"></div>
-        <div class="bottom middle" id="floatLeft"></div>
-        <div class="bottom right" id="floatLeft"></div>
+        <div class="bottom left float" id="6" onclick="display_input('6')"></div>
+        <div class="bottom middle float" id="7" onclick="display_input('7')"></div>
+        <div class="bottom right float" id="8" onclick="display_input('8')"></div>
       </div>
     </div>
+    <div>  
+    <script src="app.js" defer></script>
   </body>
 </html>

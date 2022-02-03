@@ -1,23 +1,103 @@
- * {
-     box-sizing: border-box;
- }
- #board {
-     padding-top: 3em;
-     text-align: center;   
- }
- #floatLeft{
-    float: left;
-    height: 100px;
-    width: 100px;
-    clear: none;   
-}  
- .row {
-    width: 302px;
-    margin: 0 auto; 
-    cursor: pointer;     
+:root {
+  --text: #dbdfac;
+  --bg: #c577bc;
+  --btn-bg: #d7f171;
 }
-.top{ border-bottom: 10px ridge rgb(46, 95, 23);}
-.bottom{border-top: 10px rgb(177, 32, 121) ridge;}
-.left{border-right: 10px rgb(72, 148, 28) ridge;}
-.right{border-left: 10px rgb(121, 45, 45) ridge;} 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  color: var(--text);
+  background-color: var(--bg);
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding-top: 1.25rem;
+  height: 100vh;
+}
 
+.section-wrapper {
+    background-color: #48a881;
+}
+
+.display {
+    color: white;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.hide {
+    display: none;
+}
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    margin-top: 1rem;
+}
+h1 {
+  font-size: 4rem;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  text-decoration:underline wavy;
+}
+h2 {
+  font-size: 1.8rem;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+h3 {
+    margin: 0.55rem;
+    padding: 0.55rem;
+}
+#restart {
+  margin: 0.555rem;
+  padding: 1.25rem;
+  background-color: var(--btn-bg);
+  border: none;
+  border-radius: 100%;
+  color: var(--bg);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#top-wrapper {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+#board {
+  padding-top: 5rem;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.float {
+  float: left;
+  height: 100px;
+  width: 100px;
+  clear: none;
+}
+.row {
+  width: 302px;
+  margin: 0 auto;
+  cursor: pointer;
+  color: var(--text);
+}
+.top {
+  border-bottom: 10px ridge rgb(46, 95, 23);
+}
+.bottom {
+  border-top: 10px rgb(177, 32, 121) ridge;
+}
+.left {
+  border-right: 10px rgb(72, 148, 28) ridge;
+}
+.right {
+  border-left: 10px rgb(121, 45, 45) ridge;
+}
